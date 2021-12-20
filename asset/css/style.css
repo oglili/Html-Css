@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+ 
+  .head {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; 
+    flex-wrap: wrap;
+    background-color: #c7dff7;
+    height: 80px;
+    overflow: hidden;
+
+  }
+  .brand, nav, .media {
+    display: flex;
+    align-items: center;  
+  }
+  .brand img {
+    height: 100%; 
+    object-fit: contain; 
+  }
+  .media {
+    display: none; 
+  }
+  .navlist  {
+    position: absolute;
+    width: 50%;
+    top: 5rem;
+    right: 0px;
+    background-color: #c7dff7;
+    z-index: 1
+  }
+  .navlist li {
+    display: block;
+    flex-direction: column;
+    margin-right: 18px;
+  }
+  .navlist li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: #1a1a37;
+    padding: 10px 0;
+  }
+  .navlist a:hover, .media a:hover {
+    color: rgb(52, 80, 204);
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  #dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 60px;
+    width: 50%;
+    background-color: #1a1a37;
+  }
+  .dropdown:hover #dropdown-menu {
+    display: block;
+  }
+   
+  .hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+  }
+  .hide {
+    display: none;
+  }
+  .hero {
+    background-image: url(../images/og_image1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+  }
+  .hero_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    min-width: fit-content
+  }
+  .hello, #know, #know1  {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+    
+  }
+  .name {
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 5px 5px 3px #1a1a37;
+    margin-bottom: 18px;
+  }
+  .butt {
+    padding: 15px;
+    background-color: #1a1a37;
+    border-radius: 15px;
+    color: white;
+    margin-top: 18px;
+  }
+  .butt a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+  .abut{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 50px auto;
+    background-color: #c7dff7;
+  }
+  .imgpics {
+    display: block;
+    object-fit: cover;
+   }
+  .photo {
+    width: 80%;
+    margin: 15px;
+    border: 5px solid #1a1a37;
+    box-shadow: 0 4px 8px 0 #1a1a37, 0 6px 20px 0 #1a1a37;
+  }
+  .photoText {
+    background-color: #1a1a37;
+    color: #fff;
+    width: 80%;
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 #1a1a37, 0 6px 20px 0 #1a1a37;
+  }
+  .port{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    
+  }
+  .port_img {
+    padding: 15px;
+    width: 80%;
+    margin: 0 auto;
+    transition: width 2s;
+  }
+  .port_img:hover {
+    width: 100%;
+  }
+  #footer {
+    padding: 15px;
+    background-color: #1a1a37;
+    height: 80px;
+    text-align: center;
+  }
+  #footer a {
+    display: inline-block;
+    margin-right: 18px;
+    text-decoration: none;
+    color: #fff;
+  }
+  #footer a:hover {
+    color: #505057;
+  }
+
+  @media screen and (min-width: 751px) {
+    .media {
+      display: none; 
+    }
+    .navlist {
+      display: flex;
+      position: static;
+      width: auto;
+      margin-right: 20px;
+      background: none;
+    }
+    .navlist li {
+      display: inline;
+      margin-right: 18px;
+    }
+    .navlist li a, .media a {
+      display: inline-block;
+      margin-right: 18px;
+      text-decoration: none;
+      color: #1a1a37;
+    }
+    .dropdown {
+      position: static;
+      display: inline-block;
+    }
+    #dropdown-menu {
+      position: absolute;
+      right: 50px;
+      width: 100px;
+    }
+    #dropdown-menu a {
+     display: block;
+    }
+     
+    .hamburger {
+      display: none;
+    }
+    .navlist li a, .par {
+      font-size: 15px;
+    }
+    .abut, .port{
+      flex-direction: row;
+    }
+      
+  } 
+  @media screen and (min-width: 901px) {
+    .head {
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .media {
+      display: flex;
+      position: relative; 
+    }
+    #dropdown-menu {
+      left: 65%;
+      width: 100px;
+    }
+    .navlist li a, .media a {
+      font-size: 18px;
+    }
+    .abut, .port{
+      flex-direction: row;
+    }
+  }   
+  

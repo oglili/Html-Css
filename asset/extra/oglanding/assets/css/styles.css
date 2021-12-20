@@ -1,0 +1,98 @@
+.hero {
+  height: 500px;
+  width: 100%;
+  background: url("../../assets/img/help1.jpg") center / cover no-repeat;
+  opacity: 1;
+  position: relative;
+  filter: sepia(0%);
+}
+
+.hero_left {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  text-align: center;
+  color: white;
+}
+
+.hero_left:hover {
+  color: #413d7e;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .hero_left {
+    width: 35%;
+    height: auto;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    text-align: center;
+    color: white;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero_right {
+    width: 35%;
+    /*height: 350px;*/
+    border: solid 3px blue;
+    position: absolute;
+    left: 60%;
+    top: 15%;
+    background-color: rgba(241,249,255,0.8);
+  }
+}
+
+.hero_right:hover {
+  border-width: 6px;
+  border-color: rgb(15,14,62);
+}
+
+@media (max-width: 767px) {
+  .hero_right1 {
+    width: 65%;
+    /*height: 350px;*/
+    border: solid 3px blue;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    background-color: rgba(241,249,255,0.5);
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  p {
+    font-size: 23px;
+  }
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 30px;
+  }
+}
+
+.social-icons-size {
+  font-size: 20px;
+  color: #ffffff;
+  margin: 5px;
+  padding: 10px;
+}
+
+#hero-last {
+}
+
+.hov_col:hover {
+  opacity: 0.90;
+  border: 10px solid rgb(43,37,111) ;
+}
+
