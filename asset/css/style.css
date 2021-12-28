@@ -6,7 +6,13 @@
   body {
     font-family: 'Montserrat', sans-serif;
   }
- 
+  .headM {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+  } 
   .head {
     display: flex;
     justify-content: space-between;
@@ -15,7 +21,6 @@
     background-color: #c7dff7;
     height: 80px;
     overflow: hidden;
-
   }
   .brand, nav, .media {
     display: flex;
@@ -52,18 +57,21 @@
   .navlist a:hover, .media a:hover {
     color: rgb(52, 80, 204);
   }
+  .active {
+    color: rgb(52, 80, 204) !important;
+  }
   .dropdown {
     position: relative;
     display: inline-block;
   }
-  #dropdown-menu {
+  #dropdownMenu {
     display: none;
     position: absolute;
     right: 60px;
     width: 50%;
     background-color: #1a1a37;
   }
-  .dropdown:hover #dropdown-menu {
+  .dropdown:hover #dropdownMenu {
     display: block;
   }
    
@@ -90,7 +98,7 @@
     position: relative;
     height: 500px;
   }
-  .hero_text {
+  .heroText {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -133,7 +141,7 @@
     margin: 50px auto;
     background-color: #c7dff7;
   }
-  .imgpics {
+  .imgPics {
     display: block;
     object-fit: cover;
    }
@@ -158,13 +166,13 @@
     padding: 20px;
     
   }
-  .port_img {
+  .portImg {
     padding: 15px;
     width: 80%;
     margin: 0 auto;
     transition: width 2s;
   }
-  .port_img:hover {
+  .portImg:hover {
     width: 100%;
   }
   #footer {
@@ -207,12 +215,12 @@
       position: static;
       display: inline-block;
     }
-    #dropdown-menu {
+    #dropdownMenu {
       position: absolute;
       right: 50px;
       width: 100px;
     }
-    #dropdown-menu a {
+    #dropdownMenu a {
      display: block;
     }
      
@@ -236,7 +244,7 @@
       display: flex;
       position: relative; 
     }
-    #dropdown-menu {
+    #dropdownMenu {
       left: 65%;
       width: 100px;
     }
