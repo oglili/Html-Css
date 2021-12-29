@@ -44,39 +44,79 @@
        </div>
     </header>
   </section>  
-    <div class="hero">
-      <div class="heroText">
-        <p class="hello">Hello there, I am</p>
-        <h1 class="name">OGHOMWEN OSAZUWA</h1>
-        <P id="know"></P>
-        <button class="butt"><a href="#portfolio"> MY WORK</a></button>
-      </div> 
+  <div class="hero">
+    <div class="heroText">
+      <p class="hello">Hello there, I am</p>
+      <h1 class="name">OGHOMWEN OSAZUWA</h1>
+      <P id="know"></P>
+      <button class="butt"><a href="#portfolio"> MY WORK</a></button>
+    </div> 
+  </div>
+  <h2  id="about" style="text-align: center;  margin-top: 50px;" class="photoAbout">About Me</h2>
+  <div class="abut">
+    <div class="photo">
+      <img class ="imgPics" src="asset/images/me pic.jpg" alt="my_pic" style="width: 60%;">
+      <p class="abutText">I am a Web developer in Italy, I have a strong passion for creating <b>Fast,</b> <b>Responsive</b> and <b>Dynamic</b> Websites.</p>
     </div>
-    <div class="abut" id="about">
-      <div class="photo">
-        <img class = "imgPics" src="asset/images/me pic.jpg" alt="my_pic" style="width: 100%;">
+    <div class="photoText">
+      <div class="skillsFlex" style="height: 30px;">
+        <div class="skills"><p style="padding: 5px;"> HTML</p></div><div class="skillPercent"></div><span class="skillPercentNum">90%</span>
       </div>
-      <div class="photoText">
-        <h3 style="margin: 8px;">Oghomwen</h3>
-        <P id="know1" style="font-size: 15px; margin-left: 5px;"></P>
-        <p style="margin: 5px; line-height: 1.5;">I studied computer science at the university, I've been working as a freelance english teacher to young teens and adults in Italy. I am a web & graphic designer using Adobe Cloud applications (Photoshop, Illustrator, Xd e Indesign) and languages for web designs (Html, CSS, Javascript, JQuery e Bootstrap). </p>
+      <div class="skillsFlex" style="height: 30px;">
+        <div class="skills"><p style="padding: 5px;"> CSS</p></div><div class="skillPercent"></div><span class="skillPercentNum">90%</span>
+      </div>
+      <div class="skillsFlex" style="height: 30px;">
+        <div class="skills"><p style="padding: 5px;">Photoshop</p></div><div class="skillPercent1"></div><span class="skillPercentNum1">60%</span>
+      </div>
+      <div class="skillsFlex" style="height: 30px;">
+        <div class="skills"><p style="padding: 5px;">Illustrator</p></div><div class="skillPercent1"></div><span class="skillPercentNum1">60%</span>
+      </div>
+      <div class="skillsFlex" style="height: 30px;">
+        <div class="skills"><p style="padding: 5px;">Indesign</p></div><div class="skillPercent1"></div><span class="skillPercentNum1">60%</span>
+      </div>
+      <div class="skillsFlex" style="height: 30px;">
+        <div class="skills"><p style="padding: 5px;">Xd</p></div><div class="skillPercent1"></div><span class="skillPercentNum1">60%</span>
       </div>
     </div>
-      <div id="portfolio">
-        <h2 style="text-align: center; margin-top: 50px;">PORTFOLIO</h2>
-        <div class="port">
-          <div class="portImg"><img class = "imgPics" src="asset/images/og_images2.jpg" alt="my_pic" style="width: 100%;"><h5 style="margin: 15px;"><em>Landing Page (Mobile first)</em></h5> <button class="butt" style="margin: 5px 15px; padding: 5px;"><a href="asset\extra\oglanding\index.html" style="font-size: 13px;">Go to page</a></button></div>
-          <div class="portImg"><img class = "imgPics" src="asset/images/og_image3.jpg" alt="my_pic" style="width: 100%;"> <h5 style="margin: 15px;"><em>Website (Mobile first)</em></h5> <button class="butt" style="margin: 5px 15px; padding: 5px;"><a href="#" style="font-size: 13px;">Go to page</a></button></div>
-          <div class="portImg"><img class = "imgPics" src="asset/images/og_image2.jpg" alt="my_pic" style="width: 100%; border: 3px dotted #1a1a37;"> <h5 style="margin: 15px;"><em>Website (Mobile first)</em></h5> <button class="butt" style="margin: 5px 15px; padding: 5px;"><a href="#" style="font-size: 13px;">Go to page</a></button></div>
-        </div>
+  </div>
+  <div id="portfolio">
+    <h2 style="text-align: center; margin-top: 50px;" class="photoAbout">PORTFOLIO</h2>
+    <button style="margin-left:120px;" class="tablink" onclick="openPage('Home')" id="defaultOpen">Home</button>
+    <button class="tablink" onclick="openPage('News')" >News</button>
+    <button class="tablink" onclick="openPage('Contact')">Contact</button>
+    <button style="margin-right:120px;" class="tablink" onclick="openPage('About')">About</button>
+    
+
+    <div id="Home" class="tabcontent">  
+      <div class="port">
+        <div class="portImg"><img class = "imgPics" src="asset/images/og_images2.jpg" alt="my_pic" style="width: 100%;"><h5 style="margin: 15px;"><em>Landing Page (Mobile first)</em></h5> <button class="butt" style="margin: 5px 15px; padding: 5px;"><a href="asset\extra\oglanding\index.html" style="font-size: 13px;">Go to page</a></button></div>
+        <div class="portImg"><img class = "imgPics" src="asset/images/og_image3.jpg" alt="my_pic" style="width: 100%;"> <h5 style="margin: 15px;"><em>Website (Mobile first)</em></h5> <button class="butt" style="margin: 5px 15px; padding: 5px;"><a href="#" style="font-size: 13px;">Go to page</a></button></div>
+        <div class="portImg"><img class = "imgPics" src="asset/images/og_image2.jpg" alt="my_pic" style="width: 100%; border: 3px dotted #1a1a37;"> <h5 style="margin: 15px;"><em>Website (Mobile first)</em></h5> <button class="butt" style="margin: 5px 15px; padding: 5px;"><a href="#" style="font-size: 13px;">Go to page</a></button></div>
       </div>
-      <div id="footer">
-        <p style="display: inline;"><a href="#footer">follow me:</a></p>
-        <a href="https://github.com/oglili/Html-Css" class="fa fa-github"></a>
-        <a href="https://www.linkedin.com/in/oghomwen-osazuwa-6b9a4433?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BbM8pjYqwQTaJ7jN5qS8wsA%3D%3D" class="fa fa-linkedin"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        <p style="color: #fff; padding: 10px; font-size:10px;">&copy; Oghomwen Osazuwa 2021</p>
-      </div>    
-    <script src="asset/js/scr.js"></script>
+    </div>
+        
+    <div id="News" class="tabcontent">
+      <div class="port">
+        <div class="portImg"><img class = "imgPics" src="asset/images/og_images2.jpg" alt="my_pic" style="width: 100%;"><h5 style="margin: 15px;"><em>Landing Page (Mobile first)</em></h5> <button class="butt" style="margin: 5px 15px; padding: 5px;"><a href="asset\extra\oglanding\index.html" style="font-size: 13px;">Go to page</a></button></div>
+        <div class="portImg"><img class = "imgPics" src="asset/images/og_image3.jpg" alt="my_pic" style="width: 100%;"> <h5 style="margin: 15px;"><em>Website (Mobile first)</em></h5> <button class="butt" style="margin: 5px 15px; padding: 5px;"><a href="#" style="font-size: 13px;">Go to page</a></button></div>
+      </div>
+    </div>
+    
+    <div id="Contact" class="tabcontent">
+      
+    </div>
+    
+    <div id="About" class="tabcontent">
+      
+    </div>
+  </div>
+  <div id="footer">
+    <p style="display: inline;"><a href="#footer">follow me:</a></p>
+    <a href="https://github.com/oglili/Html-Css" class="fa fa-github"></a>
+    <a href="https://www.linkedin.com/in/oghomwen-osazuwa-6b9a4433?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BbM8pjYqwQTaJ7jN5qS8wsA%3D%3D" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <p style="color: #fff; padding: 10px; font-size:10px;">Oghomwen Osazuwa &copy; 2021</p>
+  </div>    
+  <script src="asset/js/scr.js"></script>
 </body>
 </html>

@@ -98,6 +98,9 @@
     position: relative;
     height: 500px;
   }
+  .heroCont {
+    height: 250px !important;
+  }
   .heroText {
     position: absolute;
     top: 50%;
@@ -107,6 +110,7 @@
     text-align: center;
     min-width: fit-content
   }
+  
   .hello, #know, #know1  {
     font-size: 18px;
     font-style: italic;
@@ -138,33 +142,97 @@
     justify-content: center;
     align-items: center;
     width: 80%;
-    margin: 50px auto;
+    margin: 0px auto;
     background-color: #c7dff7;
   }
   .imgPics {
     display: block;
     object-fit: cover;
-   }
-  .photo {
-    width: 80%;
-    margin: 15px;
     border: 5px solid #1a1a37;
     box-shadow: 0 4px 8px 0 #1a1a37, 0 6px 20px 0 #1a1a37;
-  }
-  .photoText {
+    margin: 30px auto;
+   }
+   
+   .abutText {
+     text-align: center;
+     padding: 8px 18px;
+     width: 100%;
+   }  
+  .photoAbout {
     background-color: #1a1a37;
     color: #fff;
-    width: 80%;
-    margin: 15px;
-    padding: 10px;
+    margin: 30px auto;
+    width: 30%;
     box-shadow: 0 4px 8px 0 #1a1a37, 0 6px 20px 0 #1a1a37;
+  }
+  .skillsFlex {
+    display: flex;
+    margin: 15px 0;
+    font-size: 13px;
+  }
+  .photoText {
+    width: 100%;
+    padding: 10px;
+  }  
+  .skills {
+    background-color: #1a1a37;
+    color: #fff;
+    width: 20%;
+    text-align: center;
+    padding: 5px auto;
+    height: inherit;
+  }
+  .skillPercent {
+    background-color: #505057;
+    width: 70%;
+    height: inherit;
+  }
+  .skillPercent1 {
+    background-color: #505057;
+    width: 60%;
+    height: inherit;
+  }
+  .skillPercentNum {
+    background-color: #fff;
+    width: 10%;
+    color: black;
+    font-size: 13px;
+    padding: 5px;
+    text-align: center;
+  }
+  .skillPercentNum1 {
+    width: calc(100% - 100px - 60%);
+    background-color: #fff;
+    color: black;
+    font-size: 13px;
+    padding: 5px;
+    text-align: center;
+  }
+  .tablink {
+    color: rgb(52, 80, 204);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 50px 20px;
+    height: 100%;
   }
   .port{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
-    
+    padding: 10px;
   }
   .portImg {
     padding: 15px;
@@ -189,7 +257,44 @@
   #footer a:hover {
     color: #505057;
   }
-
+  .form {
+    width: 80%;
+    margin: auto;
+    background-color: #c7dff7;
+    text-align: center;
+    padding: 35px 55px;
+  }
+  .formIn {
+    background-color: #1a1a37;
+    border: 3px solid #add4fa;
+    box-shadow: 0 4px 8px 0 #1a1a37, 0 6px 20px 0 #1a1a37;
+    padding: 40px;
+    color: #fff;
+  }
+  input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 80%;
+    margin: 15px 0;
+    padding: 5px;
+    color: #fff;
+  }
+  textarea {
+    width: 80%;
+    margin: 15px 0;
+    padding: 5px;
+    color: #fff;
+    background-color: transparent;
+  }
+  button .butt {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  
   @media screen and (min-width: 751px) {
     .media {
       display: none; 
@@ -233,7 +338,12 @@
     .abut, .port{
       flex-direction: row;
     }
-      
+    .photo {
+      width: 40%;
+    }
+    .photoText {
+     width: 60%;
+    }
   } 
   @media screen and (min-width: 901px) {
     .head {
@@ -253,6 +363,9 @@
     }
     .abut, .port{
       flex-direction: row;
+    }
+    .form {
+      width: 60%;     
     }
   }   
   

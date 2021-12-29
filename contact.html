@@ -7,9 +7,15 @@
     <title>Oghomwen Osazuwa</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="asset/css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+      emailjs.init("user_GiFnU7pOhYv8kT2gRZNNZ");
+      })();
+    </script>
 </head>
 <body>
   <section class="headM">
@@ -35,7 +41,7 @@
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
-          </div>
+        </div>
       </nav>
       <div class="media">
         <a href="https://github.com/oglili/Html-Css" class="fa fa-github"></a>
@@ -44,25 +50,27 @@
       </div>
     </header>
   </section>
-  <div class="hero">
+  <div class="hero heroCont">
     <div class="heroText">
-      <p class="hello">Hello there, I am</p>
-      <h1 class="name">OGHOMWEN OSAZUWA</h1>
-      <P id="know"></P>
-      <button class="butt"><a href="#portfolio"> MY WORK</a></button>
-    </div> 
+      <h1 style="margin-top: 50px;">Contact Me</h1>
+    </div>
   </div> 
-  <div>
-    <p>Contact Me</p>
-    <input type="text" >
+  <div class="form">
+    <div class="formIn"> 
+      <p style="margin: 10px;"><em>Have a question or want to work together?</em></p>
+      <input type="text" id="name" placeholder="Your name">
+      <input type="email" id="email" placeholder="Your email">
+      <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Your message"></textarea>
+      <button onclick="sendMail()">Send Email</button>
+    </div>  
   </div>
   <div id="footer">
     <p style="display: inline;"><a href="#footer">follow me:</a></p>
     <a href="https://github.com/oglili/Html-Css" class="fa fa-github"></a>
     <a href="https://www.linkedin.com/in/oghomwen-osazuwa-6b9a4433?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BbM8pjYqwQTaJ7jN5qS8wsA%3D%3D" class="fa fa-linkedin"></a>
     <a href="#" class="fa fa-instagram"></a>
-    <p style="color: #fff; padding: 10px; font-size:10px;">&copy; Oghomwen Osazuwa 2021</p>
+    <p style="color: #fff; padding: 10px; font-size:10px;">Oghomwen Osazuwa &copy; 2021</p>
   </div>    
-  <script src="asset/js/scr.js"></script>
+  <script src="asset/js/scr1.js"></script>
 </body>
 </html>
