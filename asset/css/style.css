@@ -98,15 +98,6 @@
     position: relative;
     height: 500px;
   }
-  .heroPort {
-    background-image: url(../images/og_image4.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    height: 500px;
-  }
   .heroCont {
     height: 250px !important;
   }
@@ -144,6 +135,10 @@
     text-decoration: none;
     color: #fff;
     font-size: 18px;
+  }
+  .butt a:hover {
+    opacity: 0.5;
+    
   }
   .abut{
     display: flex;
@@ -258,7 +253,6 @@
     width: 100%;
   }
   #footer {
-    margin-top: 15px;
     padding: 15px;
     background-color: #1a1a37;
     text-align: center;
@@ -315,6 +309,8 @@
   }
   .oltreText {
     font-size: 15px;
+    line-height: 1.6;
+    margin: 15px 0;
   }
   .mySlides1, .mySlides2 {
     display: none;
@@ -326,6 +322,7 @@
     max-width: 1000px;
     position: relative;
     margin: auto;
+    margin-bottom: 55px;
   }
   .prev, .next {
     cursor: pointer;
@@ -348,6 +345,21 @@
   .prev:hover, .next:hover {
     background-color: #f1f1f1;
     color: black;
+  }
+  .arrow {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 10px;
+  }
+  
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
   }
   @media screen and (min-width: 751px) {
     .media {
