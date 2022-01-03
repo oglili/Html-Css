@@ -200,7 +200,7 @@
     background-color: #fff;
     width: 10%;
     color: black;
-    font-size: 13px;
+    font-size: 10px;
     padding: 5px;
     text-align: center;
   }
@@ -410,7 +410,7 @@
      width: 60%;
     }
     .skillsFlex {
-      font-size: 10px;
+      font-size: 8px;
      }
      .skillPercentNum1 {
       width: calc(100% - 100px - 60%);
