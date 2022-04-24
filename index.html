@@ -7,8 +7,8 @@
     <title>Oghomwen Osazuwa</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
         <ul class="navlist hide">
           <li><a class="active" href='index.html'>Home</a></li>
           <li><a href='#about'>About</a></li>
-          <li><a href='portfolio.html'>Portfolio</a></li>
+          <li><a href='#portfolio'>Portfolio</a></li>
           <li><a href='contact.html'>Contact</a></li>
           <li class="dropdown" ><a href='#'>eng &#8595;</a>
             <div id="dropdownMenu">
@@ -41,7 +41,7 @@
         <a href="https://github.com/oglili/Html-Css" class="fa fa-github"></a>
         <a href="https://www.linkedin.com/in/oghomwen-osazuwa-6b9a4433?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BbM8pjYqwQTaJ7jN5qS8wsA%3D%3D" class="fa fa-linkedin"></a>
         <a href="#" class="fa fa-instagram"></a> 
-       </div>
+      </div>
     </header>
   </section>  
   <div class="hero">
@@ -52,35 +52,65 @@
       <button class="butt"><a href="#portfolio"> MY WORK</a></button>
     </div> 
   </div>
-  <h2  id="about" style="text-align: center;  margin-top: 50px;" class="photoAbout">About Me</h2>
+  <h2 style="text-align: center;  margin-top: 50px;" class="photoAbout">About Me<span id="about"></span></h2>
   <div class="abut">
     <div class="photo">
       <img class ="imgPics" src="asset/images/me_pic.jpg" alt="my_pic" style="width: 60%;">
       <p class="abutText">I am a Web developer in Italy, I have a strong passion for creating <b>Fast,</b> <b>Responsive</b> and <b>Dynamic</b> Websites.</p>
     </div>
     <div class="photoText">
-      <div class="skillsFlex" style="height: 30px;">
-        <div class="skills"><p style="padding: 5px;"> HTML</p></div><div class="skillPercent"></div><span class="skillPercentNum">90%</span>
+      <div id="progress">
+        <div id="progressBar" class="bar progressBar1">
+          <p style="width: 6rem; background-color: #1a1a37;">HTML</p>
+          <div style="margin-right: -40px;">90%</div>
+        </div>
       </div>
-      <div class="skillsFlex" style="height: 30px;">
-        <div class="skills"><p style="padding: 5px;"> CSS</p></div><div class="skillPercent"></div><span class="skillPercentNum">90%</span>
+      <div id="progress">
+        <div id="progressBar" class="bar progressBar1">
+          <p style="width: 6rem; background-color: #1a1a37;">CSS</p>
+          <div style="margin-right: -40px;">90%</div>
+        </div>
       </div>
-      <div class="skillsFlex" style="height: 30px;">
-        <div class="skills"><p style="padding: 5px;">Photoshop</p></div><div class="skillPercent1"></div><span class="skillPercentNum1">60%</span>
+      <div id="progress">
+        <div id="progressBar" class="bar progressBar1">
+          <p style="width: 6rem; background-color: #1a1a37;">Javascript</p>
+          <div style="margin-right: -40px;">90%</div>
+        </div>
       </div>
-      <div class="skillsFlex" style="height: 30px;">
-        <div class="skills"><p style="padding: 5px;">Illustrator</p></div><div class="skillPercent1"></div><span class="skillPercentNum1">60%</span>
+      <div id="progress">
+        <div id="progressBar" class="bar progressBar1">
+          <p style="width: 6rem; background-color: #1a1a37;">React</p>
+          <div style="margin-right: -40px;">90%</div>
+        </div>
       </div>
-      <div class="skillsFlex" style="height: 30px;">
-        <div class="skills"><p style="padding: 5px;">Indesign</p></div><div class="skillPercent1"></div><span class="skillPercentNum1">60%</span>
+      <div id="progress">
+        <div id="progressBar" class="bar progressBar2">
+          <p style="width: 6rem; background-color: #1a1a37;">Photoshop</p>
+          <div style="margin-right: -40px;">60%</div>
+        </div>
       </div>
-      <div class="skillsFlex" style="height: 30px;">
-        <div class="skills"><p style="padding: 5px;">Xd</p></div><div class="skillPercent1"></div><span class="skillPercentNum1">60%</span>
+      <div id="progress">
+        <div id="progressBar" class="bar progressBar2">
+          <p style="width: 6rem; background-color: #1a1a37;">Illustrator</p>
+          <div style="margin-right: -40px;">60%</div>
+        </div>
       </div>
+      <div id="progress">
+        <div id="progressBar" class="bar progressBar2">
+          <p style="width: 6rem; background-color: #1a1a37;">Indesign</p>
+          <div style="margin-right: -40px;">60%</div>
+        </div>
+      </div>
+      <div id="progress">
+        <div id="progressBar" class="bar progressBar2">
+          <p style="width: 6rem; background-color: #1a1a37;">Xd</p>
+          <div style="margin-right: -40px;">60%</div>
+        </div>
+      </div>      
     </div>
   </div>
-  <div id="portfolio">
-    <h2 style="text-align: center; margin-top: 50px;" class="photoAbout">PORTFOLIO</h2>
+  <div>
+    <h2 style="text-align: center; margin-top: 50px;" class="photoAbout">PORTFOLIO <span  id="portfolio"></span></h2>
     <div class="tab">
       <button class="tabLink" onclick="openPage('All', this, '#c7dff7')" id="defaultOpen">All</button>
       <button class="tabLink" onclick="openPage('HtmlCss', this, '#c7dff7')" >HtmlCss</button>
@@ -90,22 +120,35 @@
     
     <div id="All" class="tabContent">  
       <div class="port">
-        <div class="portImg"><img class = "imgPics" src="asset/images/og_imagee5.jpg" alt="my_pic" style="width: 100%;"><h5 style="margin: 5px 0;">Landing Page</h5> <button class="butt" style="margin: 5px 0; padding: 5px;"><a href="portfolio.html#porf" style="font-size: 13px;">Go to page</a></button></div>
-        <div class="portImg"><img class = "imgPics" src="asset/images/og_imagee8.jpg" alt="my_pic" style="width: 100%;"> <h5 style="margin: 5px 0;">Website</h5> <button class="butt" style="margin: 5px 0; padding: 5px;"><a href="portfolio.html#porf1" style="font-size: 13px;">Go to page</a></button></div>
-        <div class="portImg"><img class = "imgPics" src="asset/images/og_image2.jpg" alt="my_pic" style="width: 100%; border: 3px dotted #1a1a37;"> <h5 style="margin: 5px 0;">Website</h5> <button class="butt" style="margin: 5px 0;;"><a href="#" style="font-size: 13px;">Go to page</a></button></div>
+        <div class="portImg"><img class = "imgPics" src="asset/images/og_imagee5.jpg" alt="my_pic" style="width: 80%;"><h5 style="margin-left: 30px;">Landing Page</h5> <button class="butt" style="margin-left: 30px; margin-top: 15px; padding: 5px;"><a href="portfolio.html#porf" style="font-size: 13px;">Go to page</a></button></div>
+        <div class="portImg"><img class = "imgPics" src="asset/images/og_imagee8.jpg" alt="my_pic" style="width: 80%;"> <h5 style="margin-left: 30px;">Website</h5> <button class="butt" style="margin-left: 30px; margin-top: 15px; padding: 5px;"><a href="portfolio.html#porf1" style="font-size: 13px;">Go to page</a></button></div>
+        <div class="portImg"><img class = "imgPics" src="asset/images/og_image2.jpg" alt="my_pic" style="width: 80%; border: 3px dotted #1a1a37;"> <h5 style="margin-left: 30px;">Website</h5> <button class="butt" style="margin-left: 30px; margin-top: 15px;"><a href="#" style="font-size: 13px;">Go to page</a></button></div>
       </div>
     </div>
         
     <div id="HtmlCss" class="tabContent">
       <div class="port">
-        <div class="portImg"><img class = "imgPics" src="asset/images/og_imagee5.jpg" alt="my_pic" style="width: 100%;"><h5 style="margin: 5px 0;">Landing Page</h5> <button class="butt" style="margin: 5px 0; padding: 5px;"><a href="portfolio.html#porf" style="font-size: 13px;">Go to page</a></button></div>
-        <div class="portImg"><img class = "imgPics" src="asset/images/og_imagee8.jpg" alt="my_pic" style="width: 100%;"> <h5 style="margin: 5px 0;">Website (Mobile first)</h5> <button class="butt" style="margin: 5px 0;"><a href="portfolio.html#porf1" style="font-size: 13px;">Go to page</a></button></div>
+        <div class="portImg"><img class="imgPics" src="asset/images/og_imagee5.jpg" alt="my_pic" style="width: 80%;">
+          <h5 style="margin-left: 30px;">Landing Page</h5> <button class="butt"
+            style="margin-left: 30px; margin-top: 15px; padding: 5px;"><a href="portfolio.html#porf" style="font-size: 13px;">Go
+              to page</a></button>
+        </div>
+        <div class="portImg"><img class="imgPics" src="asset/images/og_imagee8.jpg" alt="my_pic" style="width: 80%;">
+          <h5 style="margin-left: 30px;">Website</h5> <button class="butt"
+            style="margin-left: 30px; margin-top: 15px; padding: 5px;"><a href="portfolio.html#porf1"
+              style="font-size: 13px;">Go to page</a></button>
+        </div>
+        <div class="portImg"><img class="imgPics" src="asset/images/og_image2.jpg" alt="my_pic"
+            style="width: 80%; border: 3px dotted #1a1a37;">
+          <h5 style="margin-left: 30px;">Website</h5> <button class="butt" style="margin-left: 30px; margin-top: 15px; padding: 5px;"><a
+              href="#" style="font-size: 13px;">Go to page</a></button>
+        </div>
       </div>
     </div>
     
     <div id="Javascript" class="tabContent">
       <div class="port">
-        <div class="portImg"><img class = "imgPics" src="asset/images/og_image2.jpg" alt="my_pic" style="width: 100%; border: 3px dotted #1a1a37;"> <h5 style="margin: 5px 0;">Website</h5> <button class="butt" style="margin: 5px 0;"><a href="#" style="font-size: 13px;">Go to page</a></button></div>
+        <div class="portImg"><img class = "imgPics" src="asset/images/og_image2.jpg" alt="my_pic" style="width: 80%; border: 3px dotted #1a1a37;"> <h5 style="margin: 5px 0;">Website</h5> <button class="butt" style="margin: 5px 0;"><a href="#" style="font-size: 13px;">Go to page</a></button></div>
       </div>
     </div>
     

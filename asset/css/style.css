@@ -161,11 +161,12 @@
    }
    
    .abutText {
-     text-align: center;
-     padding: 8px 18px;
-     width: 100%;
+    text-align: center;
+    padding: 8px 18px;
+    width: 100%;
    }
    .photoAbout {
+    position: relative; 
     background-color: #1a1a37;
     font-size: 13px;
     color: #fff;
@@ -174,6 +175,38 @@
     padding: 5px;
     box-shadow: 0 4px 8px 0 #1a1a37, 0 6px 20px 0 #1a1a37;
   }
+  .anchor{
+    position: relative; 
+  }
+  .photoAbout #about, .photoAbout #portfolio, .anchor #porf, .anchor #porf1  {
+    position: absolute;
+    left: 0;
+    top: -120px; /* change this value to match the height of the header */
+    height: 0;
+    width: 0;
+}
+#progress {
+  width: 100%;    
+  background-color: #1a1a37;
+  margin-bottom: 1rem;
+}
+#progressBar {
+  height: 40px;
+  background-color: #9f9fa2;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+}
+.progressBar1 {
+  width: 90%;
+}
+.progressBar2 {
+  width: 60%;
+}
+.bar {
+  display: flex;
+  justify-content: space-between;
+}
   .skillsFlex {
     display: flex;
     margin: 15px 0;
@@ -192,7 +225,7 @@
     height: inherit;
   }
   .skillPercent {
-    background-color: #505057;
+    background-color: #c7c7ca;
     width: 70%;
     height: inherit;
   }

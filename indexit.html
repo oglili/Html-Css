@@ -21,7 +21,7 @@
         <ul class="navlist hide">
           <li><a class="active" href='indexit.html'>Home</a></li>
           <li><a href='#about'>Chi Sono</a></li>
-          <li><a href='portafoglioit.html'>Portafoglio</a></li>
+          <li><a href='#portfolio'>Portafoglio</a></li>
           <li><a href='contattoit.html'>Contatto</a></li>
           <li class="dropdown" ><a href='#'>ita &#8595;</a>
             <div id="dropdownMenu">
@@ -52,35 +52,65 @@
       <button class="butt"><a href="#portfolio">IL MIO LAVORO</a></button>
     </div> 
   </div>
-  <h2  id="about" style="text-align: center;  margin-top: 50px;" class="photoAbout">Chi Sono</h2>
+  <h2 style="text-align: center;  margin-top: 50px;" class="photoAbout">Chi Sono<span id="about"></span></h2>
   <div class="abut">
     <div class="photo">
       <img class ="imgPics" src="asset/images/me_pic.jpg" alt="my_pic" style="width: 60%;">
       <p class="abutText">Sono una sviluppatrice web e vivo in Italia, ho una forte passione per la creazione di siti web <b>veloci,</b> <b>responsive</b> e <b>dinamici.</b></p>
     </div>
     <div class="photoText">
-      <div class="skillsFlex" style="height: 30px;">
-        <div class="skills"><p style="padding: 5px;"> HTML</p></div><div class="skillPercent"></div><span class="skillPercentNum">90%</span>
+      <div id="progress">
+        <div id="progressBar" class="bar progressBar1">
+          <p style="width: 6rem; background-color: #1a1a37;">HTML</p>
+          <div style="margin-right: -40px;">90%</div>
+        </div>
       </div>
-      <div class="skillsFlex" style="height: 30px;">
-        <div class="skills"><p style="padding: 5px;"> CSS</p></div><div class="skillPercent"></div><span class="skillPercentNum">90%</span>
+      <div id="progress">
+        <div id="progressBar" class="bar progressBar1">
+          <p style="width: 6rem; background-color: #1a1a37;">CSS</p>
+          <div style="margin-right: -40px;">90%</div>
+        </div>
       </div>
-      <div class="skillsFlex" style="height: 30px;">
-        <div class="skills"><p style="padding: 5px;">Photoshop</p></div><div class="skillPercent1"></div><span class="skillPercentNum1">60%</span>
+      <div id="progress">
+        <div id="progressBar" class="bar progressBar1">
+          <p style="width: 6rem; background-color: #1a1a37;">Javascript</p>
+          <div style="margin-right: -40px;">90%</div>
+        </div>
       </div>
-      <div class="skillsFlex" style="height: 30px;">
-        <div class="skills"><p style="padding: 5px;">Illustrator</p></div><div class="skillPercent1"></div><span class="skillPercentNum1">60%</span>
+      <div id="progress">
+        <div id="progressBar" class="bar progressBar1">
+          <p style="width: 6rem; background-color: #1a1a37;">React</p>
+          <div style="margin-right: -40px;">90%</div>
+        </div>
       </div>
-      <div class="skillsFlex" style="height: 30px;">
-        <div class="skills"><p style="padding: 5px;">Indesign</p></div><div class="skillPercent1"></div><span class="skillPercentNum1">60%</span>
+      <div id="progress">
+        <div id="progressBar" class="bar progressBar2">
+          <p style="width: 6rem; background-color: #1a1a37;">Photoshop</p>
+          <div style="margin-right: -40px;">60%</div>
+        </div>
       </div>
-      <div class="skillsFlex" style="height: 30px;">
-        <div class="skills"><p style="padding: 5px;">Xd</p></div><div class="skillPercent1"></div><span class="skillPercentNum1">60%</span>
+      <div id="progress">
+        <div id="progressBar" class="bar progressBar2">
+          <p style="width: 6rem; background-color: #1a1a37;">Illustrator</p>
+          <div style="margin-right: -40px;">60%</div>
+        </div>
       </div>
+      <div id="progress">
+        <div id="progressBar" class="bar progressBar2">
+          <p style="width: 6rem; background-color: #1a1a37;">Indesign</p>
+          <div style="margin-right: -40px;">60%</div>
+        </div>
+      </div>
+      <div id="progress">
+        <div id="progressBar" class="bar progressBar2">
+          <p style="width: 6rem; background-color: #1a1a37;">Xd</p>
+          <div style="margin-right: -40px;">60%</div>
+        </div>
+      </div>      
     </div>
   </div>
-  <div id="portfolio">
-    <h2 style="text-align: center; margin-top: 50px;" class="photoAbout">PORTAFOGLIO</h2>
+  <div>
+    <h2 style="text-align: center; margin-top: 50px;" class="photoAbout">PORTAFOGLIO<span id="portfolio"></span></h2>
     <div class="tab">
       <button class="tabLink" onclick="openPage('All', this, '#c7dff7')" id="defaultOpen">All</button>
       <button class="tabLink" onclick="openPage('HtmlCss', this, '#c7dff7')" >HtmlCss</button>
@@ -90,16 +120,43 @@
     
     <div id="All" class="tabContent">  
       <div class="port">
-        <div class="portImg"><img class = "imgPics" src="asset/images/og_images2.jpg" alt="my_pic" style="width: 100%;"><h5 style="margin: 5px 0;"><em>Landing Page</em></h5> <button class="butt" style="margin: 5px 0; padding: 5px;"><a href="portafoglioit.html#porf" style="font-size: 13px;">Vai alla pagina</a></button></div>
-        <div class="portImg"><img class = "imgPics" src="asset/images/og_image8.jpg" alt="my_pic" style="width: 100%;"> <h5 style="margin: 5px 0;"><em>Website</em></h5> <button class="butt" style="margin: 5px 0; padding: 5px;"><a href="portafoglioit.html#porf1" style="font-size: 13px;">Vai alla pagina</a></button></div>
-        <div class="portImg"><img class = "imgPics" src="asset/images/og_image2.jpg" alt="my_pic" style="width: 100%; border: 3px dotted #1a1a37;"> <h5 style="margin: 5px 0;"><em>Website</em></h5> <button class="butt" style="margin: 5px 0; padding: 5px;"><a href="#" style="font-size: 13px;">Vai alla pagina</a></button></div>
+        <div class="portImg"><img class="imgPics" src="asset/images/og_images2.jpg" alt="my_pic" style="width: 80%;">
+          <h5 style="margin-left: 30px;"><em>Landing Page</em></h5> <button class="butt"
+            style="margin-left: 30px; margin-top: 15px; padding: 5px;"><a href="portafoglioit.html#porf"
+              style="font-size: 13px;">Vai alla pagina</a></button>
+        </div>
+        <div class="portImg"><img class="imgPics" src="asset/images/og_image8.jpg" alt="my_pic" style="width: 80%;">
+          <h5 style="margin-left: 30px;"><em>Website</em></h5> <button class="butt"
+            style="margin-left: 30px; margin-top: 15px; padding: 5px;"><a href="portafoglioit.html#porf1"
+              style="font-size: 13px;">Vai alla pagina</a></button>
+        </div>
+        <div class="portImg"><img class="imgPics" src="asset/images/og_image2.jpg" alt="my_pic"
+            style="width: 80%; border: 3px dotted #1a1a37;">
+          <h5 style="margin-left: 30px;"><em>Website</em></h5> <button class="butt"
+            style="margin-left: 30px; margin-top: 15px; padding: 5px;"><a href="#" style="font-size: 13px;">Vai alla
+              pagina</a></button>
+        </div>
       </div>
     </div>
         
     <div id="HtmlCss" class="tabContent">
       <div class="port">
-        <div class="portImg"><img class = "imgPics" src="asset/images/og_images2.jpg" alt="my_pic" style="width: 100%;"><h5 style="margin: 5px 0;"><em>Landing Page</em></h5> <button class="butt" style="margin: 5px 0; padding: 5px;"><a href="portafoglioit.html#porf" style="font-size: 13px;">Vai alla pagina</a></button></div>
-        <div class="portImg"><img class = "imgPics" src="asset/images/og_image8.jpg" alt="my_pic" style="width: 100%;"> <h5 style="margin: 5px 0;"><em>Website</em></h5> <button class="butt" style="margin: 5px 0; padding: 5px;"><a href="portafoglioit.html#porf1" style="font-size: 13px;">Vai alla pagina</a></button></div>
+        <div class="portImg"><img class="imgPics" src="asset/images/og_images2.jpg" alt="my_pic" style="width: 80%;">
+          <h5 style="margin-left: 30px;"><em>Landing Page</em></h5> <button class="butt"
+            style="margin-left: 30px; margin-top: 15px; padding: 5px;"><a href="portafoglioit.html#porf"
+              style="font-size: 13px;">Vai alla pagina</a></button>
+        </div>
+        <div class="portImg"><img class="imgPics" src="asset/images/og_image8.jpg" alt="my_pic" style="width: 80%;">
+          <h5 style="margin-left: 30px;"><em>Website</em></h5> <button class="butt"
+            style="margin-left: 30px; margin-top: 15px; padding: 5px;"><a href="portafoglioit.html#porf1"
+              style="font-size: 13px;">Vai alla pagina</a></button>
+        </div>
+        <div class="portImg"><img class="imgPics" src="asset/images/og_image2.jpg" alt="my_pic"
+            style="width: 80%; border: 3px dotted #1a1a37;">
+          <h5 style="margin-left: 30px;"><em>Website</em></h5> <button class="butt"
+            style="margin-left: 30px; margin-top: 15px; padding: 5px;"><a href="#" style="font-size: 13px;">Vai alla
+              pagina</a></button>
+        </div>
       </div>
     </div>
     
