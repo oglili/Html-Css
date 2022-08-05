@@ -283,9 +283,7 @@
     margin: 0 auto;
     transition: width 2s;
   }
-  .portImg:hover {
-    width: 100%;
-  }
+  
   #footer {
     padding: 15px;
     background-color: #1a1a37;
@@ -438,11 +436,14 @@
       font-size: 15px;
     }
     .abut, .port{
-      flex-direction: row;
+      flex-direction: row;      
+    }
+    .portImg:hover {
+      width: 50%;
     }
     .portImg {
       padding: 15px;
-      width: 80%;
+      width: 30%;
     }
     .photo {
       width: 40%;
