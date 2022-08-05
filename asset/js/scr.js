@@ -6,7 +6,7 @@ hamburger.addEventListener('click', () => {
 
 });
 
-var cap = ["Programmer", "Web & Graphic Designer", "Full Stack Developer"];
+var cap = ["Web & Graphic Designer", "Full Stack Developer","English Teacher"];
 var x = 0;
 setInterval(displayCap, 1000);
 function displayCap() {
